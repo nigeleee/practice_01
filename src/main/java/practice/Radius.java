@@ -2,6 +2,8 @@ package practice;
 
 import java.io.Console;
 
+import javax.swing.plaf.ToolBarUI;
+
 public class Radius {
 
     public static void main(String[] args) {
@@ -11,10 +13,12 @@ public class Radius {
         int r = Integer.parseInt(input);
     
         int d = r*2;
-        System.out.println("Diameter = " + d + " Area = " + area(r,d));
+        // System.out.println("Diameter = " + d + " Area = " + area(r));
+        System.out.printf("Diameter = %d, Area = %.3f ", d, area(r));
+        
        }
 
-    public static double area(int r, int d) {
+    public static double area(int r) {
         double area = 3.142*r*r;
         return area;
 
